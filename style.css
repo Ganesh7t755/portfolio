@@ -259,7 +259,7 @@ h2 {
 }
 
 .skill-card-link {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
     display: block;
     cursor: pointer;
