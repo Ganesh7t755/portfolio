@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #fbf9f5;
+    background: #fcfdfa;
     color: #2d3748;
     line-height: 1.6;
     overflow-x: hidden;
@@ -26,7 +26,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background: rgba(251, 249, 245, 0.88);
+    background: rgba(252, 253, 250, 0.88);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     position: sticky;
