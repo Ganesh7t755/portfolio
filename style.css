@@ -81,7 +81,7 @@ nav ul li a:hover {
     
     /* Dark charcoal/forest overlay over background image */
     background: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)), 
-                url('hero-bg.jpg') center/cover no-repeat;
+                url('https://wallpaperaccess.com/full/4711267.jpg') center/cover no-repeat;
 }
 
 .hero h1 {
