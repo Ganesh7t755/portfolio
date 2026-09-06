@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh M | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Ganesh M</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>Hello, I'm <span>Ganesh M</span></h1>
+            <h2>BCA Student | Aspiring Software Developer</h2>
+            <p>
+                Passionate about Software Development, Artificial Intelligence,
+                Android App Development, and building real-world applications.
+            </p>
+           <div class="hero-btns">
+    <a href="#contact" class="btn">Hire Me</a>
+    <a href="resume.pdf" download="Ganesh_M_Resume.pdf" class="btn btn-outline">
+        <i class="fas fa-file-download"></i> Download Resume
+    </a>
+</div>
+
+            <!-- Quick Stats Section -->
+            <div class="stats-ribbon">
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Species Trained</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2026</span>
+                    <span class="stat-label">BCA Batch</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p class="about-text">
+            Motivated Bachelor of Computer Applications student with a strong
+            interest in software development, artificial intelligence, and modern
+            application development. Experienced in building practical personal
+            projects using web technologies and Python, with a growing focus on
+            Android development and AI-powered applications.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        
+        <!-- Skill Category Filter Tabs -->
+        <div class="skill-tabs">
+            <button class="tab-btn active" data-category="all">All</button>
+            <button class="tab-btn" data-category="languages">Languages</button>
+            <button class="tab-btn" data-category="mobile">Mobile & AI</button>
+            <button class="tab-btn" data-category="web">Web & Tools</button>
+        </div>
+
+        <div class="skills-grid">
+            <div class="card" data-category="languages">Python</div>
+            <div class="card" data-category="languages">JavaScript</div>
+            <div class="card" data-category="languages">C++</div>
+            <div class="card" data-category="web">HTML</div>
+            <div class="card" data-category="web">CSS</div>
+            <div class="card" data-category="languages mobile">Kotlin</div>
+            <div class="card" data-category="mobile">Jetpack Compose</div>
+            <div class="card" data-category="mobile">TensorFlow Lite</div>
+            <div class="card" data-category="web mobile">REST APIs</div>
+            <div class="card" data-category="web">Git</div>
+            <div class="card" data-category="web">GitHub</div>
+            <div class="card" data-category="mobile">Android Studio</div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="edu-card">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p>Kalpataru First Grade Science College, Tiptur</p>
+            <span class="edu-date">2026 – Present</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card clickable" id="phyto-card">
+                <div class="project-header">
+                    <h3>Phyto Intelligence</h3>
+                    <span class="badge">Click for details</span>
+                </div>
+                <p>
+                    AI-powered plant identification application using TensorFlow Lite.
+                    Supports offline plant recognition, multilingual responses, and AI-assisted plant information.
+                </p>
+                <div class="project-actions">
+                    <span class="btn-sm"><i class="fas fa-mobile-alt"></i> View App Details</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    Responsive portfolio website built using HTML, CSS, and JavaScript.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>E-Commerce UI</h3>
+                <p>
+                    Modern shopping interface inspired by leading online platforms.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Calculator & Weather App</h3>
+                <p>
+                    Practical applications built for improving programming and API skills.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Modal for Phyto Intelligence -->
+    <div class="modal-overlay" id="phyto-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <h2>Phyto Intelligence — AI Plant Identification Application</h2>
+            
+            <div class="modal-body-layout">
+                <div class="modal-text-col">
+                    <ul class="modal-details-list">
+                        <li>Developed an AI-powered plant identification application that analyzes plant images and provides species-level identification and related botanical information.</li>
+                        <li>Implemented offline AI inference using TensorFlow Lite, allowing plant identification directly on the device without depending entirely on an internet connection.</li>
+                        <li>Trained and integrated an image-classification model capable of identifying hundreds of plant species, with plans for further expansion.</li>
+                        <li>Designed an intelligent result system that can provide alternative species matches with confidence percentages when the model is uncertain.</li>
+                        <li>Implemented image-quality and specimen guidance features to help users capture clearer and more suitable images for AI analysis.</li>
+                        <li>Developed a modern camera interface with automatic autofocus and tap-to-focus, live focus/sharpness guidance, specimen positioning guidance, and image-quality validation.</li>
+                        <li>Added support for multilingual AI responses, making plant information more accessible to users in different languages.</li>
+                        <li>Implemented a “Specimen not verified” state to prevent non-botanical or unsuitable images from being presented as confirmed plant identifications.</li>
+                        <li>Integrated AI-assisted plant information and image-generation capabilities for providing additional visual and descriptive information about identified plants.</li>
+                        <li>Focused on improving inference speed, reliability, user experience, and offline functionality through continuous testing and debugging.</li>
+                    </ul>
+                </div>
+
+                <div class="modal-visuals-col">
+                    <div class="visual-card">
+                        <h4>App Interface</h4>
+                        <img src="UI.png" alt="Phyto Intelligence App UI" class="app-preview-img">
+                    </div>
+                    <div class="visual-card qr-card">
+                        <h4>Scan to Download</h4>
+                        <img src="QR Code.png" alt="Download QR Code" class="qr-code-img">
+                        <p class="qr-subtext">Scan with phone camera to install</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="interest">
+        <h2>Areas of Interest</h2>
+        <div class="interest-list">
+            <span>Artificial Intelligence</span>
+            <span>Software Development</span>
+            <span>Android Development</span>
+            <span>Web Development</span>
+            <span>Machine Learning</span>
+            <span>Application Design</span>
+        </div>
+    </section>
+
+    <section id="strengths">
+        <h2>Strengths</h2>
+        <ul class="strengths-list">
+            <li><i class="fas fa-check-circle"></i> Practical Problem Solving</li>
+            <li><i class="fas fa-check-circle"></i> Self-Directed Learning</li>
+            <li><i class="fas fa-check-circle"></i> Debugging & Troubleshooting</li>
+            <li><i class="fas fa-check-circle"></i> Hands-on Project Development</li>
+            <li><i class="fas fa-check-circle"></i> Quick Learning of New Technologies</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:maheshr1978m@gmail.com">
+                <i class="fas fa-envelope"></i>
+                Email
+            </a>
+            <a href="https://github.com/Ganesh7t755" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ganesh-m-60469b429/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ganesh M | Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh M - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 40px 50px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.4;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .contact-info {
+            font-size: 13px;
+        }
+
+        .contact-info a {
+            color: #0000ee;
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 2px;
+            margin-top: 18px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        p, li {
+            font-size: 13px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+        /* Flex Layouts for Dates & Titles */
+        .flex-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .project-item {
+            margin-bottom: 12px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .project-title a {
+            color: #0000ee;
+            text-decoration: underline;
+            font-weight: normal;
+        }
+
+        /* Personal Profile Table */
+        .profile-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        .profile-table td {
+            padding: 3px 0;
+            vertical-align: top;
+        }
+
+        .profile-table td:first-child {
+            width: 180px;
+            font-weight: bold;
+        }
+
+        /* Declaration */
+        .declaration-text {
+            margin-top: 6px;
+            margin-bottom: 25px;
+        }
+
+        .signature-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+
+        @media print {
+            body {
+                padding: 20px 30px;
+            }
+            .section-title {
+                margin-top: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>GANESH M</h1>
+        <div class="contact-info">
+            <a href="mailto:maheshr1978m@gmail.com">maheshr1978m@gmail.com</a> | 
+            <a href="https://www.linkedin.com/in/ganesh-m-60469b429/" target="_blank">linkedin.com/in/ganesh-m</a> | 
+            <a href="https://github.com/Ganesh7t755" target="_blank">github.com/Ganesh7t755</a>
+        </div>
+    </div>
+
+    <!-- Objective Section -->
+    <div class="section-title">OBJECTIVE</div>
+    <p>
+        Motivated Bachelor of Computer Applications student with a strong foundation in software development, Artificial Intelligence, and Android application development. Eager to contribute technical skills and build real-world applications in a dynamic growth-oriented environment.
+    </p>
+
+    <!-- Education Section -->
+    <div class="section-title">EDUCATION</div>
+    <div class="flex-row">
+        <span class="bold">Bachelor of Computer Applications (BCA)</span>
+        <span class="bold">2026</span>
+    </div>
+    <div class="italic">Kalpataru First Grade Science College, Tiptur</div>
+
+    <!-- Technical Skills Section -->
+    <div class="section-title">TECHNICAL SKILLS</div>
+    <table class="profile-table">
+        <tr>
+            <td>• Programming Languages:</td>
+            <td>Python, JavaScript, C++, Kotlin</td>
+        </tr>
+        <tr>
+            <td>• Mobile & AI Technologies:</td>
+            <td>Jetpack Compose, TensorFlow Lite, Android Studio</td>
+        </tr>
+        <tr>
+            <td>• Web Development:</td>
+            <td>HTML5, CSS3, REST APIs</td>
+        </tr>
+        <tr>
+            <td>• Developer Tools:</td>
+            <td>Git, GitHub</td>
+        </tr>
+    </table>
+
+    <!-- Projects Section -->
+    <div class="section-title">PROJECTS</div>
+
+    <div class="project-item">
+        <div class="project-title">1. PHYTO INTELLIGENCE — AI PLANT IDENTIFICATION APP</div>
+        <p>
+            Developed an AI-powered plant identification application that analyzes plant images and provides species-level recognition and botanical info. Integrated offline inference using <b>TensorFlow Lite</b> for fast, on-device classification without internet dependency. Features camera auto-focus guidance, specimen verification states, and multilingual AI responses.
+        </p>
+        <p style="margin-top: 3px;"><b>Technologies:</b> Kotlin, Jetpack Compose, TensorFlow Lite, Android SDK</p>
+    </div>
+
+    <div class="project-item">
+        <div class="project-title">2. PERSONAL PORTFOLIO WEBSITE <a href="https://github.com/Ganesh7t755" target="_blank">[GitHub]</a></div>
+        <p>
+            Designed and built a responsive personal portfolio featuring custom botanical UI theme, skill filtering, dynamic project modals, and interactive showcase sections.
+        </p>
+        <p style="margin-top: 3px;"><b>Technologies:</b> HTML5, CSS3, JavaScript</p>
+    </div>
+
+    <div class="project-item">
+        <div class="project-title">3. E-COMMERCE UI & UTILITY APPS</div>
+        <p>
+            Developed modern shopping interfaces inspired by leading platforms along with practical utility tools to strengthen UI design and API integration capabilities.
+        </p>
+        <p style="margin-top: 3px;"><b>Technologies:</b> JavaScript, HTML5, CSS3, REST APIs</p>
+    </div>
+
+    <!-- Personal Profile Section -->
+    <div class="section-title">PERSONAL PROFILE</div>
+    <table class="profile-table">
+        <tr>
+            <td>Name:</td>
+            <td>Ganesh M</td>
+        </tr>
+        <tr>
+            <td>Languages Known:</td>
+            <td>English, Kannada</td>
+        </tr>
+        <tr>
+            <td>Areas of Interest:</td>
+            <td>Artificial Intelligence, Mobile App Development, Software Engineering</td>
+        </tr>
+    </table>
+
+    <!-- Declaration Section -->
+    <div class="section-title">DECLARATION</div>
+    <p class="declaration-text">
+        I hereby declare that the above-furnished information is true and correct to the best of my knowledge and belief.
+    </p>
+
+    <div class="signature-row">
+        <div>Date: _________________</div>
+        <div>Signature: _________________</div>
+    </div>
+
+</body>
+</html>
