@@ -79,33 +79,27 @@ nav ul li a:hover {
     padding: 60px 20px;
     position: relative;
     
-    /* Stronger white overlay for perfect readability */
-    background: linear-gradient(rgba(252, 253, 250, 0.92), rgba(252, 253, 250, 0.92)), 
+    /* Dark charcoal/forest overlay over background image */
+    background: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)), 
                 url('hero-bg.jpg') center/cover no-repeat;
 }
 
-/* Enhances readability over busy background images */
-.hero h1, .hero h2, .hero p {
-    position: relative;
-    z-index: 2;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
-}
 .hero h1 {
     font-size: 3.2rem;
     font-weight: 800;
     margin-bottom: 10px;
     letter-spacing: -0.5px;
-    color: #1a202c;
+    color: #ffffff; /* Crisp white */
 }
 
 .hero span {
-    color: #2e5a44;
+    color: #4ade80; /* Bright green accent */
     display: inline-block;
 }
 
 .hero h2 {
     margin-bottom: 15px;
-    color: #5a6a5d;
+    color: #94a3b8; /* Muted gray/white */
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -113,7 +107,7 @@ nav ul li a:hover {
 .hero p {
     max-width: 650px;
     margin-bottom: 25px;
-    color: #4a5568;
+    color: #cbd5e1; /* Off-white body text */
     font-size: 1.1rem;
 }
 
