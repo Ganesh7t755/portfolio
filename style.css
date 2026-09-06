@@ -141,15 +141,16 @@ nav ul li a:hover {
 }
 
 .btn-outline {
-    background: transparent;
-    color: #2e5a44;
-    border: 2px solid #2e5a44;
+    background: rgba(255, 255, 255, 0.05); /* Soft transparent fill */
+    color: #ffffff;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
     box-shadow: none;
 }
 
 .btn-outline:hover {
-    background: #2e5a44;
-    color: #ffffff;
+    background: #ffffff;
+    color: #0f172a;
+    border-color: #ffffff;
 }
 
 .stats-ribbon {
