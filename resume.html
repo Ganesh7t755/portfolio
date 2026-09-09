@@ -128,12 +128,62 @@
             font-size: 13px;
         }
 
+        @page {
+            size: A4 portrait;
+            margin: 10mm 15mm 10mm 15mm;
+        }
+
         @media print {
             body {
-                padding: 20px 30px;
+                padding: 0;
+                max-width: 100%;
+                line-height: 1.38;
+            }
+            .header {
+                margin-bottom: 14px;
+            }
+            .header h1 {
+                font-size: 24px;
+                margin-bottom: 4px;
+            }
+            .contact-info {
+                font-size: 13px;
             }
             .section-title {
-                margin-top: 14px;
+                font-size: 14px;
+                margin-top: 13px;
+                margin-bottom: 7px;
+                padding-bottom: 2px;
+            }
+            p, li {
+                font-size: 13px;
+                line-height: 1.38;
+            }
+            .flex-row {
+                font-size: 13.5px;
+                margin-bottom: 2px;
+            }
+            .profile-table {
+                font-size: 13px;
+            }
+            .profile-table td {
+                padding: 3px 0;
+            }
+            .project-item {
+                margin-bottom: 10px;
+            }
+            .project-title {
+                font-size: 13.5px;
+                margin-bottom: 2px;
+            }
+            .declaration-text {
+                margin-top: 6px;
+                margin-bottom: 18px;
+                font-size: 13px;
+            }
+            .signature-row {
+                margin-top: 18px;
+                font-size: 13px;
             }
         }
     </style>
@@ -160,7 +210,7 @@
     <div class="section-title">EDUCATION</div>
     <div class="flex-row">
         <span class="bold">Bachelor of Computer Applications (BCA)</span>
-        <span class="bold">2026</span>
+        <span class="bold">2026 – Present</span>
     </div>
     <div class="italic">Kalpataru First Grade Science College, Tiptur</div>
 
@@ -197,7 +247,7 @@
     </div>
 
     <div class="project-item">
-        <div class="project-title">2. PERSONAL PORTFOLIO WEBSITE <a href="https://github.com/Ganesh7t755" target="_blank">[GitHub]</a></div>
+        <div class="project-title">2. PERSONAL PORTFOLIO WEBSITE</div>
         <p>
             Designed and built a responsive personal portfolio featuring custom botanical UI theme, skill filtering, dynamic project modals, and interactive showcase sections.
         </p>
