@@ -43,6 +43,13 @@
             text-decoration: underline;
         }
 
+        .strengths-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3px 24px;
+            font-size: 13px;
+        }
+
         /* Section Styling */
         .section-title {
             font-size: 14px;
@@ -81,6 +88,10 @@
 
         .italic {
             font-style: italic;
+        }
+
+        .edu-item {
+            margin-bottom: 6px;
         }
 
         .project-item {
@@ -130,60 +141,70 @@
 
         @page {
             size: A4 portrait;
-            margin: 10mm 15mm 10mm 15mm;
+            margin: 8mm 14mm 8mm 14mm;
         }
 
         @media print {
             body {
                 padding: 0;
                 max-width: 100%;
-                line-height: 1.38;
+                line-height: 1.34;
             }
             .header {
-                margin-bottom: 14px;
-            }
-            .header h1 {
-                font-size: 24px;
-                margin-bottom: 4px;
-            }
-            .contact-info {
-                font-size: 13px;
-            }
-            .section-title {
-                font-size: 14px;
-                margin-top: 13px;
-                margin-bottom: 7px;
-                padding-bottom: 2px;
-            }
-            p, li {
-                font-size: 13px;
-                line-height: 1.38;
-            }
-            .flex-row {
-                font-size: 13.5px;
-                margin-bottom: 2px;
-            }
-            .profile-table {
-                font-size: 13px;
-            }
-            .profile-table td {
-                padding: 3px 0;
-            }
-            .project-item {
                 margin-bottom: 10px;
             }
-            .project-title {
+            .header h1 {
+                font-size: 23px;
+                margin-bottom: 3px;
+            }
+            .contact-info {
+                font-size: 12.5px;
+            }
+            .section-title {
                 font-size: 13.5px;
+                margin-top: 9px;
+                margin-bottom: 5px;
+                padding-bottom: 1px;
+            }
+            p, li {
+                font-size: 12.5px;
+                line-height: 1.34;
+            }
+            .flex-row {
+                font-size: 13px;
+                margin-bottom: 1px;
+            }
+            .edu-item {
+                margin-bottom: 4px;
+            }
+            .profile-table {
+                font-size: 12.5px;
+            }
+            .profile-table td {
+                padding: 2px 0;
+            }
+            .project-item {
+                margin-bottom: 7px;
+            }
+            .project-title {
+                font-size: 13px;
                 margin-bottom: 2px;
             }
+            .strengths-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2px 24px;
+                font-size: 12.5px;
+                line-height: 1.34;
+            }
             .declaration-text {
-                margin-top: 6px;
-                margin-bottom: 18px;
-                font-size: 13px;
+                margin-top: 4px;
+                margin-bottom: 14px;
+                font-size: 12.5px;
             }
             .signature-row {
-                margin-top: 18px;
-                font-size: 13px;
+                margin-top: 14px;
+                font-size: 12.5px;
             }
         }
     </style>
@@ -208,11 +229,33 @@
 
     <!-- Education Section -->
     <div class="section-title">EDUCATION</div>
-    <div class="flex-row">
-        <span class="bold">Bachelor of Computer Applications (BCA)</span>
-        <span class="bold">2026 – Present</span>
+    <div class="edu-item">
+        <div class="flex-row">
+            <span class="bold">Bachelor of Computer Applications (BCA)</span>
+            <span class="bold">2026 – Present</span>
+        </div>
+        <div class="italic">Kalpataru First Grade Science College, Tiptur</div>
     </div>
-    <div class="italic">Kalpataru First Grade Science College, Tiptur</div>
+    <div class="edu-item">
+        <div class="flex-row">
+            <span class="bold">Pre-University Course (PUC)</span>
+            <span class="bold">2025 – 2026</span>
+        </div>
+        <div class="flex-row">
+            <span class="italic">Department of Pre-University Education, Karnataka</span>
+            <span class="bold">Percentage: 81.17%</span>
+        </div>
+    </div>
+    <div class="edu-item">
+        <div class="flex-row">
+            <span class="bold">Secondary School Leaving Certificate (SSLC)</span>
+            <span class="bold">2023 – 2024</span>
+        </div>
+        <div class="flex-row">
+            <span class="italic">Karnataka Secondary Education Examination Board (KSEEB)</span>
+            <span class="bold">Percentage: 53%</span>
+        </div>
+    </div>
 
     <!-- Technical Skills Section -->
     <div class="section-title">TECHNICAL SKILLS</div>
@@ -234,6 +277,16 @@
             <td>Git, GitHub</td>
         </tr>
     </table>
+
+    <!-- Strengths Section -->
+    <div class="section-title">STRENGTHS</div>
+    <div class="strengths-grid">
+        <div>• Problem Solving & Logical Thinking</div>
+        <div>• Self-Learning & Continuous Improvement</div>
+        <div>• Practical Project Development</div>
+        <div>• Attention to Detail</div>
+        <div>• Creative UI & User Experience Design</div>
+    </div>
 
     <!-- Projects Section -->
     <div class="section-title">PROJECTS</div>
