@@ -304,6 +304,7 @@ h2 {
     cursor: pointer;
 }
 
+.education-grid,
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
